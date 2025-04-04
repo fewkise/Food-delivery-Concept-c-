@@ -26,6 +26,9 @@ header nav {
        column-gap: 35vw;
   border-bottom: 1px solid rgb(219, 219, 219);
   padding-bottom: 1vh;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 header nav ul:nth-child(1) img {
   width: 10vw;
@@ -741,4 +744,57 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   main .centerMain ul:nth-child(1) li {
     width: 100%;
   }
+}
+#modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 87vh;
+  width: 20vw;
+  padding-bottom: 13vh;
+  right: 0;
+  top: 6.5%;
+  z-index: 1;
+  position: fixed;
+  display: none;
+  background-color: rgb(255, 255, 255);
+}
+#modal li:nth-child(7) {
+  align-self: flex-end;
+  border: none;
+}
+#modal ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  width: 80%;
+  position: relative;
+  top: -20%;
+  row-gap: 2vh;
+}
+#modal ul li:nth-child(1) {
+  justify-content: space-around;
+  align-self: flex-start;
+  border: none;
+}
+#modal ul li:nth-child(2) {
+  color: #9093A6;
+  font-size: 0.7vw;
+}
+#modal ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+  line-height: 5vh;
+  font-size: 1vw;
+  border-bottom: 1px #F2F4FA solid;
+}
+#modal ul li a {
+  text-decoration: none;
+  color: #9093A6;
 }/*# sourceMappingURL=style.css.map */

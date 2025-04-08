@@ -1,4 +1,4 @@
-let opens = document.getElementById('open_modal');
+ let opens = document.getElementById('open_modal');
 let modal = document.getElementById('modal');
 let image1 = 'imgs/ic-menu-navigation.png'; // первая картинка
 let image2 = 'imgs/ic-menu-navigation2.png'; // вторая картинка
@@ -6,30 +6,31 @@ let image = document.getElementById('button_image');
 let login = document.getElementById('login')
 let closelogin = document.getElementById('nazad')
 let openlogin = document.getElementById('open_login')
-let input = document.querySelector('.email')
-let submit = document.getElementById('submit')
-input.addEventListener ('input', onInput)
-let regexp = '@gmail.com'
-function onInput(){
-        if (isEmailValid(input.value)) {
-                input.style.borderColor = 'green'
-                submit.addEventListener('click', () => {
-                        window.location.href = '.../logginedPage/index.html'
-                })  
-                relocate()
-        } else {
-                input.style.borderColor = 'red' 
-        }
-}
-input.addEventListener('input', onInput)
-function isEmailValid(value) {
-        if (input.value.includes(regexp)){
-                return true
-        } else {
-                return false
-        }
+let input = document.querySelector('.email');
+let submit = document.getElementById('submit');
+let regexp = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+input.addEventListener('input', onInput);
+submit.addEventListener('click', onSubmit);
+
+function onInput() {
+    if (isEmailValid(input.value)) {
+        input.style.borderColor = 'green';
+    } else {
+        input.style.borderColor = 'red';
+    }
 }
 
+function isEmailValid(value) {
+    return regexp.test(value);
+}
+
+function onSubmit(event) {
+    event.preventDefault(); // предотвращаем действие по умолчанию
+    if (isEmailValid(input.value)) {
+        window.location.href = '../logginedPage/index.html'; // укажите верный путь
+    }
+}
 function loginopen (){
         openlogin.addEventListener('click', () => {
              if (login.style.display === 'none' || login.style.display === '') {

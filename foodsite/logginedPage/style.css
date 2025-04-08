@@ -45,6 +45,9 @@ header nav ul:nth-child(2) {
 header nav ul:nth-child(2) img {
   width: 1.5vw;
 }
+header nav ul:nth-child(2) #loginPhoto {
+  width: 3vw;
+}
 header nav ul:nth-child(2) li {
   display: flex;
   justify-content: space-around;
@@ -797,4 +800,35 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
 #modal ul li a {
   text-decoration: none;
   color: #9093A6;
+}
+
+#login {
+  flex-direction: column;
+  position: absolute;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  display: none;
+}
+#login .my-form {
+  display: flex;
+  font-size: 1vw;
+  height: auto;
+  row-gap: 2vh;
+  position: absolute;
+  flex-direction: column;
+  background-color: pink;
+  width: auto;
+  padding: 2vh;
+}
+#login .my-form button {
+  font-size: 1vw;
+  background-color: rgb(255, 150, 165);
+  border: none;
+  padding: 0.5vw;
+}
+
+#open_login {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

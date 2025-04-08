@@ -38,8 +38,12 @@ header {
             column-gap: 2vw;
             align-items: center;
             height: auto;
+
             img {
                 width: 1.5vw;
+            }
+            #loginPhoto {
+                width: 3vw;
             }
             li {
                 display: flex;
@@ -798,4 +802,35 @@ main {
         }
 
     }
+}
+//авторизация, логин с валидацией
+#login {
+
+    flex-direction: column;
+    position: absolute;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    display: none;
+    .my-form {
+        display: flex;
+        font-size: 1vw;
+        height: auto;
+        row-gap: 2vh;
+        position: absolute;
+        flex-direction: column;
+        background-color: pink;
+        width: auto;
+        padding: 2vh;
+        button {
+            font-size:1vw ;
+            background-color: rgb(255, 150, 165);
+            border: none;
+            padding: 0.5vw;
+        }
+    }
+}
+#open_login {
+    cursor: pointer;
 }

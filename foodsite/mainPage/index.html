@@ -13,11 +13,21 @@
                     <li><a href=""><img src="imgs/Logo.png" alt=""></a></li>
              </ul>
             <ul>
-                    <li><a href=""><img src="imgs/person.png" alt="">Log in</a></li>
+                    <li><a id="open_login"><img src="imgs/person.png" alt="">Log in</a></li>
                     <li><a href=""><img src="imgs/cart.png" alt="">0</a></li>
                     <li><button id="open_modal"><img id="button_image" src="imgs/ic-menu-navigation.png" alt=""></button></li>
             </ul>
         </nav>
+        <div id="login">
+            <form class="my-form">
+                <label for="email">Почта:</label>
+                <input class="email"  type="email" name="smth" id="email" required>
+                <label for="password">Пароль:</label>
+                <input name="password" maxlength="20" minlength="3" class="password" id="password" type="password" required>
+                <button id="submit" type="submit">Зарегистрироваться</button>
+                <button id="nazad">Назад</button>
+            </form>
+        </div>
         <div id="modal">
             
             <ul>

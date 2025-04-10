@@ -208,15 +208,15 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   align-items: center;
   justify-content: space-around;
   row-gap: 4vh;
-  height: 40vh;
-  width: auto;
+  height: 50vh;
+  width: 85vw;
 }
 .restourantsAll .restourantsHolder .restourant {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 2vw;
        column-gap: 2vw;
-  width: auto;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
 }
@@ -243,7 +243,7 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
 }
 .restourantsAll .restourantsHolder .arrows {
   display: flex;
-  width: 103%;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -264,7 +264,7 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: auto;
+  width: 100%;
   -moz-column-gap: 2vw;
        column-gap: 2vw;
 }
@@ -275,6 +275,24 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   background-image: url("imgs/Photo-base3.png");
 }
 .holderCards .restourant:nth-child(4) ul li:nth-child(1) {
+  background-image: url("imgs/Photo-base4.png");
+}
+.holderCards .restourant:nth-child(5) ul li:nth-child(1) {
+  background-image: url("imgs/Photo-base2.png");
+}
+.holderCards .restourant:nth-child(6) ul li:nth-child(1) {
+  background-image: url("imgs/Photo-base3.png");
+}
+.holderCards .restourant:nth-child(7) ul li:nth-child(1) {
+  background-image: url("imgs/Photo-base4.png");
+}
+.holderCards .restourant:nth-child(8) ul li:nth-child(1) {
+  background-image: url("imgs/Photo-base2.png");
+}
+.holderCards .restourant:nth-child(9) ul li:nth-child(1) {
+  background-image: url("imgs/Photo-base3.png");
+}
+.holderCards .restourant:nth-child(10) ul li:nth-child(1) {
   background-image: url("imgs/Photo-base4.png");
 }
 
@@ -389,7 +407,7 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
 }
 .specsAll .specs #arrows {
   display: flex;
-  width: 103%;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -417,7 +435,7 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   justify-content: space-between;
 }
 .specsAll .specs ul:nth-child(2) li {
-  box-shadow: 6px 6px 24px 3px rgba(34, 60, 80, 0.2);
+  box-shadow: 2px 2px 15px 2px rgba(34, 60, 80, 0.2);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -828,4 +846,8 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
 
 #open_login {
   cursor: pointer;
+}
+
+.swiper1 {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

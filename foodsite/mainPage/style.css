@@ -28,6 +28,7 @@ header nav {
   padding-bottom: 1vh;
   position: fixed;
   top: 0;
+  z-index: 100;
   background-color: white;
 }
 header nav ul:nth-child(1) img {
@@ -471,6 +472,7 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   justify-content: space-around;
   width: 85vw;
   height: auto;
+  z-index: 1;
 }
 .lemonsAll .lemons ul {
   display: flex;
@@ -663,11 +665,6 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   .specsAll .specs ul:nth-child(2) li {
     min-width: 60px;
   }
-  .specsAll .specs ul:nth-child(2) {
-    overflow-x: hidden;
-    min-height: 12vh;
-    padding: 2vh;
-  }
   .specsAll #nazvRest {
     height: auto;
   }
@@ -676,10 +673,6 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   }
   .specsAll .specs ul:nth-child(2) li img {
     min-width: 19px;
-  }
-  .specsAll .specs {
-    height: auto;
-    row-gap: 2vh;
   }
   .deliveryOpis {
     font-size: 15px;
@@ -714,10 +707,6 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   }
   .restourantsAll .restourantsHolder .restourant ul li:nth-child(1) {
     width: auto;
-  }
-  .holderCards {
-    flex-wrap: wrap;
-    row-gap: 2vh;
   }
   .restourantsAll .restourantsHolder .restourant ul li:nth-child(1) {
     min-height: 90px;
@@ -772,8 +761,8 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   width: 20vw;
   padding-bottom: 13vh;
   right: 0;
-  top: 6.5%;
-  z-index: 1;
+  top: 69px;
+  z-index: 100;
   position: fixed;
   display: none;
   background-color: rgb(255, 255, 255);
@@ -791,6 +780,9 @@ main .centerMain ul:nth-child(1) li button p:nth-child(2) {
   position: relative;
   top: -20%;
   row-gap: 2vh;
+}
+#modal ul img {
+  width: 1.5vw;
 }
 #modal ul li:nth-child(1) {
   justify-content: space-around;

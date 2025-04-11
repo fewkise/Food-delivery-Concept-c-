@@ -25,6 +25,7 @@ header {
         padding-bottom: 1vh;
         position: fixed;
         top: 0;
+        z-index: 100;
         background-color: white;
         ul:nth-child(1){
             img{
@@ -498,6 +499,7 @@ main {
         justify-content: space-around;
         width: 85vw;
         height: auto;
+        z-index: 1;
         ul {
             display: flex;
             width: 100%;
@@ -689,11 +691,7 @@ main {
     .specsAll .specs ul:nth-child(2) li {
         min-width: 60px;
     }
-    .specsAll .specs ul:nth-child(2) {
-        overflow-x: hidden;
-        min-height: 12vh;
-        padding: 2vh;
-    }
+
     .specsAll #nazvRest{
         height: auto;
     }
@@ -703,10 +701,7 @@ main {
             min-width: 19px;
         }
     }
-    .specsAll .specs {
-        height: auto;
-        row-gap: 2vh;
-    }
+
     .deliveryOpis {
         font-size: 15px;
     }
@@ -741,10 +736,7 @@ main {
     .restourantsAll .restourantsHolder .restourant ul li:nth-child(1) {
         width: auto;
     }
-    .holderCards {
-       flex-wrap:wrap;
-       row-gap: 2vh;
-    }
+
     .restourantsAll .restourantsHolder .restourant ul li:nth-child(1) {
         min-height: 90px;
     }
@@ -798,8 +790,8 @@ main {
     width: 20vw;
     padding-bottom: 13vh;
     right: 0;
-    top: 6.5%;
-    z-index: 1;
+    top: 69px;
+    z-index: 100;
     position: fixed;
     display: none;
     background-color: rgb(255, 255, 255);
@@ -816,6 +808,9 @@ main {
         position: relative;
         top: -20%;
         row-gap: 2vh;
+        img {
+            width: 1.5vw;
+        }
         li:nth-child(1){
             justify-content: space-around;
             align-self: flex-start;
@@ -876,3 +871,5 @@ main {
 .swiper1 {
     overflow: hidden;
 }
+
+  

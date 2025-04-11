@@ -72,6 +72,8 @@ const swiper = new Swiper('.swiper', {
     loop: true,
       speed:1200,
     slidesPerView: 4,
+
+
     spaceBetween: 10,
     // If we need pagination
     pagination: {
@@ -83,8 +85,21 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
+    breakpoints: {
+      // mobile + tablet - 320-990
+      1920: {
+        slidesPerView:4
+      },
+      998: {
+        slidesPerView: 3
+      },
+      778: {
+        slidesPerView: 2
+      },
+      320: {
+        slidesPerView: 1
+      },
+    },
     scrollbar: {
       el: '.swiper-scrollbar',
     },

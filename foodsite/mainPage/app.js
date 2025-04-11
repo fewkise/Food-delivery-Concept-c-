@@ -99,6 +99,9 @@ const swiper = new Swiper('.swiper', {
       320: {
         slidesPerView: 1
       },
+      10: {
+        slidesPerView: 1
+      },
     },
     scrollbar: {
       el: '.swiper-scrollbar',
